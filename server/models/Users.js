@@ -7,7 +7,11 @@ const UserSchema = mongoose.Schema({
     },
     city:{
         type:String,
-        required:True
+        required:true
+    },
+    gender:{
+        type:String,
+        required:true
     },
     description:{
         type:String,
@@ -18,5 +22,5 @@ const UserSchema = mongoose.Schema({
 
 const User = mongoose.model('User',UserSchema);
 
-exports.model = User;
+module.exports = User;
 
